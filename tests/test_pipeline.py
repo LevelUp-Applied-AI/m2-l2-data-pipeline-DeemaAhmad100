@@ -10,7 +10,7 @@ The autograder will run your tests as part of the CI check.
 """
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath('.'))  # Ensure pipeline.py is importable
 
 import pandas as pd
 import numpy as np
